@@ -2,9 +2,13 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
+    <!-- Sets the Title of the Webpage  -->
     <title>Movie Trivia Game</title>
+    <!-- Reset.css clears formatting -->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <!-- This stylesheet link makes bootstrap code accessible in the app -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- Style.css adds formatting -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
   </head>
@@ -12,14 +16,15 @@
   <div id="container">
     <br>
   	<h1>Movie Trivia!</h1>
+    <!-- THE TIMER! -->
   	<h2>Time Remaining -- <span id="timer"></span></h2>
     <hr>
-
+    <!-- 7 Multiple Choice Questions Related to Movies -->
     <h2>What year of Hogwarts was Harry Potter's Goblet of Fire?</h2>
     <h3>
-      <input type="radio" class="year" name="year" value="correct"> Fourth</input>
-      <input type="radio" class="year" name="year" value="wrong"> Third</input>
-      <input type="radio" class="year" name="year" value="wrong"> Fifth</input>
+      <input type="radio" class="goblet" name="goblet" value="correct">Fourth</input>
+      <input type="radio" class="goblet" name="goblet" value="wrong"> Third</input>
+      <input type="radio" class="goblet" name="goblet" value="wrong"> Fifth</input>
     </h3>
 
    <h2>Who played Sam in Lord of the Rings?</h2>
@@ -36,11 +41,36 @@
       <input type="radio" class="rating" name="rating" value="wrong">PG-13</input>
       <input type="radio" class="rating" name="rating" value="correct">PG</input>
     </h3>
+
+       <h2>What year was the movie Star Wars - The Phantom Menace?</h2>
+    <h3>
+      <input type="radio" class="star" name="star" value="wrong">1983</input>
+      <input type="radio" class="star" name="star" value="correct">1999</input>
+      <input type="radio" class="star" name="star" value="wrong">2002</input>
+    </h3> 
+   <h2>What award event is about movies?</h2>
+    <h3>
+      <input type="radio" class="award" name="award" value="wrong">Annie's</input>
+      <input type="radio" class="award" name="award" value="wrong">Grammy's</input>
+      <input type="radio" class="award" name="award" value="correct">Oscars</input>
+    </h3> 
+     <h2>What movie did Steven Spielberg direct?</h2>
+    <h3>
+      <input type="radio" class="director" name="director" value="wrong">The Da Vinci Code</input>
+      <input type="radio" class="director" name="director" value="wrong">Raiders of the Lost Ark</input>
+      <input type="radio" class="director" name="director" value="correct">E.T. the Extra-Terrestrial</input>
+    </h3> 
+     <h2>In the Ice Age Movie Saga, what role does Ray Ramano play??</h2>
+    <h3>
+      <input type="radio" class="ice" name="ice" value="wrong">Diego</input>
+      <input type="radio" class="ice" name="ice" value="correct">Manfred</input>
+      <input type="radio" class="ice" name="ice" value="wrong">Sid</input>
+    </h3> 
 </div>
 
 <!-- jQuery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
-
+<!--   <button id="restart">Restart</button> -->
     <!-- Script -->
     <script type="text/javascript" src="assets/javascript/app.js"></script>
   
